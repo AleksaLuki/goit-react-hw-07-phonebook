@@ -1,16 +1,17 @@
+import { ContactsForm } from './ContactsForm/ContactsForm';
+import { Filter } from './Filter/Filter';
+import { ContactsList } from './ContactsList/ContactsList';
+import { Toaster } from 'react-hot-toast';
+
+
 export const App = () => {
+ 
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <ContactsForm />
+      <Filter />
+      <ContactsList />
+      <Toaster />
+    </>
   );
 };
